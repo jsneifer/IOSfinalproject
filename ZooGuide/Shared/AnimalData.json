@@ -1,0 +1,32 @@
+[
+    {
+        "species": "Jaguar",
+        "habitat": "Rainforest",
+        "kingdom": "mammal",
+        "description": "spotted"
+    },
+    {
+        "species": "Sand Boa",
+        "habitat": "Desert",
+        "kingdom": "reptile",
+        "description": "Slithery Snake"
+    },
+    {
+        "species": "Bald Eagle",
+        "habitat": "Forest",
+        "kingdom": "bird",
+        "description": "'merica"
+    },
+    {
+        "species": "Poision Dart Frog",
+        "habitat": "Rainforest",
+        "kingdom": "amphibian",
+        "description": "Careful..."
+    },
+    {
+        "species": "Whale Shark",
+        "habitat": "Ocean",
+        "kingdom": "fish",
+        "description": "Largest living fish in the ocean"
+    },
+]
