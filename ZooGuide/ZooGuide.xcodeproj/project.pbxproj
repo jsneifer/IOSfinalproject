@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		7E31918E282384AC00D3012F /* ZooGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31917E282384A200D3012F /* ZooGuideApp.swift */; };
 		7E31918F282384AC00D3012F /* ZooGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31917E282384A200D3012F /* ZooGuideApp.swift */; };
-		7E319190282384AC00D3012F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31917F282384A200D3012F /* ContentView.swift */; };
-		7E319191282384AC00D3012F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31917F282384A200D3012F /* ContentView.swift */; };
+		7E319190282384AC00D3012F /* HabitatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31917F282384A200D3012F /* HabitatView.swift */; };
+		7E319191282384AC00D3012F /* HabitatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31917F282384A200D3012F /* HabitatView.swift */; };
 		7E319192282384AC00D3012F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E319180282384AC00D3012F /* Assets.xcassets */; };
 		7E319193282384AC00D3012F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E319180282384AC00D3012F /* Assets.xcassets */; };
 		7E31919D282387E600D3012F /* AnimalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31919C282387E600D3012F /* AnimalStore.swift */; };
@@ -23,11 +23,15 @@
 		7E3191AA28238A8C00D3012F /* AnimalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3191A828238A8C00D3012F /* AnimalDetail.swift */; };
 		7E3191AC28238BB600D3012F /* AnimalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3191AB28238BB600D3012F /* AnimalData.swift */; };
 		7E3191AD28238BB600D3012F /* AnimalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3191AB28238BB600D3012F /* AnimalData.swift */; };
+		7ED78BC028247BD100521272 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED78BBF28247BD100521272 /* HomePage.swift */; };
+		7ED78BC128247BD100521272 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED78BBF28247BD100521272 /* HomePage.swift */; };
+		7ED78BC32824902400521272 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED78BC22824902400521272 /* MapView.swift */; };
+		7ED78BC42824902400521272 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED78BC22824902400521272 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E31917E282384A200D3012F /* ZooGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooGuideApp.swift; sourceTree = "<group>"; };
-		7E31917F282384A200D3012F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7E31917F282384A200D3012F /* HabitatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitatView.swift; sourceTree = "<group>"; };
 		7E319180282384AC00D3012F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E319185282384AC00D3012F /* ZooGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E31918B282384AC00D3012F /* ZooGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +41,8 @@
 		7E3191A528238A7F00D3012F /* AnimalData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimalData.json; sourceTree = "<group>"; };
 		7E3191A828238A8C00D3012F /* AnimalDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalDetail.swift; sourceTree = "<group>"; };
 		7E3191AB28238BB600D3012F /* AnimalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalData.swift; sourceTree = "<group>"; };
+		7ED78BBF28247BD100521272 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		7ED78BC22824902400521272 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				7E31917E282384A200D3012F /* ZooGuideApp.swift */,
-				7E31917F282384A200D3012F /* ContentView.swift */,
+				7E31917F282384A200D3012F /* HabitatView.swift */,
+				7ED78BC22824902400521272 /* MapView.swift */,
+				7ED78BBF28247BD100521272 /* HomePage.swift */,
 				7E31919C282387E600D3012F /* AnimalStore.swift */,
 				7E3191A22823884000D3012F /* Animal.swift */,
 				7E3191A828238A8C00D3012F /* AnimalDetail.swift */,
@@ -199,9 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E31919D282387E600D3012F /* AnimalStore.swift in Sources */,
+				7ED78BC32824902400521272 /* MapView.swift in Sources */,
 				7E3191AC28238BB600D3012F /* AnimalData.swift in Sources */,
 				7E3191A32823884000D3012F /* Animal.swift in Sources */,
-				7E319190282384AC00D3012F /* ContentView.swift in Sources */,
+				7E319190282384AC00D3012F /* HabitatView.swift in Sources */,
+				7ED78BC028247BD100521272 /* HomePage.swift in Sources */,
 				7E31918E282384AC00D3012F /* ZooGuideApp.swift in Sources */,
 				7E3191A928238A8C00D3012F /* AnimalDetail.swift in Sources */,
 			);
@@ -212,9 +222,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E31919E282387E600D3012F /* AnimalStore.swift in Sources */,
+				7ED78BC42824902400521272 /* MapView.swift in Sources */,
 				7E3191AD28238BB600D3012F /* AnimalData.swift in Sources */,
 				7E3191A42823884000D3012F /* Animal.swift in Sources */,
-				7E319191282384AC00D3012F /* ContentView.swift in Sources */,
+				7E319191282384AC00D3012F /* HabitatView.swift in Sources */,
+				7ED78BC128247BD100521272 /* HomePage.swift in Sources */,
 				7E31918F282384AC00D3012F /* ZooGuideApp.swift in Sources */,
 				7E3191AA28238A8C00D3012F /* AnimalDetail.swift in Sources */,
 			);

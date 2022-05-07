@@ -7,47 +7,38 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HabitatView: View {
     
     @State private var animalStore : AnimalStore = AnimalStore(animals: AnimalData)
     
     @State private var selection = 1
     
     var body: some View {
-        Color.white
-            .ignoresSafeArea()
-            .overlay(
-                NavigationView {
-                    TabView(selection: $selection) {
-                        VStack{
-                            RainforestPage(animalStore: $animalStore)
-                        }.tabItem {
-                                Image(systemName: "leaf.circle.fill")
-                            }.tag(1)
-                        VStack{
-                            DesertPage(animalStore: $animalStore)
-                        }.tabItem {
-                                Image(systemName: "flame.circle.fill")
-                            }.tag(2)
-                        VStack{
-                            OceanPage(animalStore: $animalStore)
-                        }.tabItem {
-                                Image(systemName: "drop.circle.fill")
-                            }.tag(3)
-                        VStack{
-                            ForestPage(animalStore: $animalStore)
-                        }.tabItem {
-                                Image(systemName: "pawprint.circle.fill")
-                            }.tag(4)
-                    }
+        NavigationView {
+            TabView(selection: $selection) {
+                VStack{
+                    RainforestPage(animalStore: $animalStore)
                 }
-            )
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+                .tabItem {
+                    Image(systemName: "leaf.circle.fill")
+                }.tag(1)
+                VStack{
+                    DesertPage(animalStore: $animalStore)
+                }.tabItem {
+                    Image(systemName: "flame.circle.fill")
+                }.tag(2)
+                VStack{
+                    OceanPage(animalStore: $animalStore)
+                }.tabItem {
+                    Image(systemName: "drop.circle.fill")
+                }.tag(3)
+                VStack{
+                    ForestPage(animalStore: $animalStore)
+                }.tabItem {
+                    Image(systemName: "pawprint.circle.fill")
+                }.tag(4)
+            }
+        }
     }
 }
 
@@ -59,25 +50,16 @@ struct RainforestPage: View {
     @State var rainforestAnimal: [Animal] = []
     
     var body: some View {
-        
-        VStack {
-            Text("Rainforest")
-                .font(.largeTitle)
-                .fontWeight(.medium)
-                .foregroundColor(.green)
-                .padding()
-            
-            NavigationView {
-                List {
-                    ForEach (animalStore.animals, id: \.self) { animal in
-                        if(animal.habitat == "Rainforest") {
-                            ListCell(animal: animal)
-                        }
+        NavigationView {
+            List {
+                ForEach (animalStore.animals, id: \.self) { animal in
+                    if(animal.habitat == "Rainforest") {
+                        ListCell(animal: animal)
                     }
                 }
-            }
-        }
-        
+            }.navigationTitle("Rainforest")
+                .navigationBarTitleDisplayMode(.inline)
+        } // Navigation View
     }
 }
 
@@ -94,6 +76,8 @@ struct DesertPage: View {
             .fontWeight(.medium)
             .foregroundColor(.orange)
             .padding()
+        
+        Spacer()
         
         NavigationView {
             List {
@@ -121,6 +105,8 @@ struct OceanPage: View {
             .foregroundColor(.blue)
             .padding()
         
+        Spacer()
+        
         NavigationView {
             List {
                 ForEach (animalStore.animals, id: \.self) { animal in
@@ -146,6 +132,9 @@ struct ForestPage: View {
             .fontWeight(.medium)
             .foregroundColor(.brown)
             .padding()
+        
+        Spacer()
+        Divider()
         
         NavigationView {
             List {

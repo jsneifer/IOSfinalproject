@@ -20,20 +20,18 @@ struct AnimalDetail: View {
                     .padding()
                 HStack {
                     Text("Habitat: ")
-                        .foregroundColor(.red)
+                        .foregroundColor(.black)
                         .font(.headline)
                     
                     Text("\(selectedAnimal.habitat)")
                 }
                 HStack {
                     Text("Kingdom: ")
-                        .foregroundColor(.red)
+                        .foregroundColor(.black)
                         .font(.headline)
                     
                     Text("\(selectedAnimal.kingdom)")
                 }
-                .padding()
-                .multilineTextAlignment(.center)
 
                 Text(selectedAnimal.description)
                     .font(.subheadline)
