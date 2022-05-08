@@ -19,8 +19,9 @@ struct HomePage: View {
                         Image(systemName: "pawprint.fill")
                             .foregroundColor(.black)
                         
-                    }.background(RoundedRectangle(cornerRadius: CGFloat(15.0)).foregroundColor(.green).opacity(0.5).frame(width: 155, height: 50, alignment: .center))
+                    }.background(RoundedRectangle(cornerRadius: CGFloat(15.0)).foregroundColor(.green).opacity(0.5).frame(width: 170, height: 50, alignment: .center))
                 }
+                .padding()
                 NavigationLink(destination: MapView()) {
                     HStack {
                         Text("Map")
@@ -29,7 +30,7 @@ struct HomePage: View {
                         Image(systemName: "globe.europe.africa.fill")
                             .foregroundColor(.black)
                         
-                    }.background(RoundedRectangle(cornerRadius: CGFloat(15.0)).foregroundColor(.green).opacity(0.5).frame(width: 155, height: 50, alignment: .center))
+                    }.background(RoundedRectangle(cornerRadius: CGFloat(15.0)).foregroundColor(.green).opacity(0.5).frame(width: 120, height: 50, alignment: .center))
                 }
             }
         }

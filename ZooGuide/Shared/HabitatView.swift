@@ -14,31 +14,30 @@ struct HabitatView: View {
     @State private var selection = 1
     
     var body: some View {
-        NavigationView {
-            TabView(selection: $selection) {
-                VStack{
-                    RainforestPage(animalStore: $animalStore)
-                }
-                .tabItem {
-                    Image(systemName: "leaf.circle.fill")
-                }.tag(1)
-                VStack{
-                    DesertPage(animalStore: $animalStore)
-                }.tabItem {
-                    Image(systemName: "flame.circle.fill")
-                }.tag(2)
-                VStack{
-                    OceanPage(animalStore: $animalStore)
-                }.tabItem {
-                    Image(systemName: "drop.circle.fill")
-                }.tag(3)
-                VStack{
-                    ForestPage(animalStore: $animalStore)
-                }.tabItem {
-                    Image(systemName: "pawprint.circle.fill")
-                }.tag(4)
-            }
+        TabView(selection: $selection) {
+            VStack{
+                RainforestPage(animalStore: $animalStore)
+            }.tabItem {
+                Image(systemName: "leaf.circle.fill")
+            }.tag(1)
+            VStack{
+                DesertPage(animalStore: $animalStore)
+            }.tabItem {
+                Image(systemName: "flame.circle.fill")
+            }.tag(2)
+            VStack{
+                OceanPage(animalStore: $animalStore)
+            }.tabItem {
+                Image(systemName: "drop.circle.fill")
+            }.tag(3)
+            VStack{
+                ForestPage(animalStore: $animalStore)
+            }.tabItem {
+                Image(systemName: "pawprint.circle.fill")
+            }.tag(4)
         }
+        .navigationTitle("Habitats")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -50,16 +49,18 @@ struct RainforestPage: View {
     @State var rainforestAnimal: [Animal] = []
     
     var body: some View {
-        NavigationView {
+        
+        Text("Rainforest")
+            .font(.largeTitle)
+            .padding()
+        
             List {
                 ForEach (animalStore.animals, id: \.self) { animal in
                     if(animal.habitat == "Rainforest") {
                         ListCell(animal: animal)
                     }
                 }
-            }.navigationTitle("Rainforest")
-                .navigationBarTitleDisplayMode(.inline)
-        } // Navigation View
+            }
     }
 }
 
@@ -73,13 +74,8 @@ struct DesertPage: View {
         
         Text("Desert")
             .font(.largeTitle)
-            .fontWeight(.medium)
-            .foregroundColor(.orange)
             .padding()
         
-        Spacer()
-        
-        NavigationView {
             List {
                 ForEach (animalStore.animals, id: \.self) { animal in
                     if(animal.habitat == "Desert") {
@@ -87,7 +83,7 @@ struct DesertPage: View {
                     }
                 }
             }
-        }
+        
     }
 }
 
@@ -101,13 +97,8 @@ struct OceanPage: View {
         
         Text("Ocean")
             .font(.largeTitle)
-            .fontWeight(.medium)
-            .foregroundColor(.blue)
             .padding()
         
-        Spacer()
-        
-        NavigationView {
             List {
                 ForEach (animalStore.animals, id: \.self) { animal in
                     if(animal.habitat == "Ocean") {
@@ -116,7 +107,6 @@ struct OceanPage: View {
                 }
             }
         }
-    }
 }
 
 struct ForestPage: View {
@@ -129,23 +119,15 @@ struct ForestPage: View {
         
         Text("Forest")
             .font(.largeTitle)
-            .fontWeight(.medium)
-            .foregroundColor(.brown)
             .padding()
         
-        Spacer()
-        Divider()
-        
-        NavigationView {
             List {
                 ForEach (animalStore.animals, id: \.self) { animal in
                     if(animal.habitat == "Forest") {
                         ListCell(animal: animal)
                     }
-                }
-            }
+                }            }
         }
-    }
 }
 
 struct ListCell: View {
@@ -157,5 +139,11 @@ struct ListCell: View {
                 .fontWeight(.semibold)
                 .padding()
         }
+    }
+}
+
+struct HabitatView_Previews: PreviewProvider {
+    static var previews: some View {
+        HabitatView()
     }
 }
