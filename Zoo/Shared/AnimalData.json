@@ -1,0 +1,282 @@
+[
+    {
+        "species": "Jaguar",
+        "habitat": "Rainforest",
+        "kingdom": "mammal",
+        "description": "spotted",
+        "imageName": "Jaguar"
+    },
+    {
+        "species": "Fruit Bat",
+        "habitat": "Rainforest",
+        "kingdom": "mammal",
+        "description": "spotted",
+        "imageName": "Fruit_Bat"
+    },
+    {
+        "species": "Giant Anteater",
+        "habitat": "Rainforest",
+        "kingdom": "mammal",
+        "description": "spotted",
+        "imageName": "Giant_Anteater"
+    },
+    {
+        "species": "Hippopotamus",
+        "habitat": "Rainforest",
+        "kingdom": "mammal",
+        "description": "spotted",
+        "imageName": "Hippopotamus"
+    },
+    {
+        "species": "Iguana",
+        "habitat": "Rainforest",
+        "kingdom": "reptile",
+        "description": "spotted",
+        "imageName": "Iguana"
+    },
+    {
+        "species": "Orangutan",
+        "habitat": "Rainforest",
+        "kingdom": "mammal",
+        "description": "spotted",
+        "imageName": "Orangutan"
+    },
+    {
+        "species": "Porcupine",
+        "habitat": "Rainforest",
+        "kingdom": "mammal",
+        "description": "spotted",
+        "imageName": "Porcupine"
+    },
+    {
+        "species": "Red Panda",
+        "habitat": "Rainforest",
+        "kingdom": "mammal",
+        "description": "spotted",
+        "imageName": "Red_Panda"
+    },
+    {
+        "species": "Lemur",
+        "habitat": "Rainforest",
+        "kingdom": "mammal",
+        "description": "spotted",
+        "imageName": "Lemur"
+    },
+    {
+        "species": "Poision Dart Frog",
+        "habitat": "Rainforest",
+        "kingdom": "amphibian",
+        "description": "Careful...",
+        "imageName": "Poison_Dart_Frog"
+    },
+    {
+        "species": "Sand Boa",
+        "habitat": "Desert",
+        "kingdom": "reptile",
+        "description": "Slithery Snake",
+        "imageName": "Sand_Boa"
+    },
+    {
+        "species": "African Penguin",
+        "habitat": "Desert",
+        "kingdom": "bird",
+        "description": "spotted",
+        "imageName": "African_Penguin"
+    },
+    {
+        "species": "Antelope",
+        "habitat": "Desert",
+        "kingdom": "mammal",
+        "description": "Slithery Snake",
+        "imageName": "Antelope"
+    },
+    {
+        "species": "Camal",
+        "habitat": "Desert",
+        "kingdom": "mammal",
+        "description": "Slithery Snake",
+        "imageName": "Camal"
+    },
+    {
+        "species": "Meerkat",
+        "habitat": "Desert",
+        "kingdom": "mammal",
+        "description": "Slithery Snake",
+        "imageName": "Meerkat"
+    },
+    {
+        "species": "Prairie Dog",
+        "habitat": "Desert",
+        "kingdom": "mammal",
+        "description": "Slithery Snake",
+        "imageName": "Prairie_Dog"
+    },
+    {
+        "species": "Rattlesnake",
+        "habitat": "Desert",
+        "kingdom": "reptile",
+        "description": "Slithery Snake",
+        "imageName": "Rattlesnack"
+    },
+    {
+        "species": "Red Kangaroo",
+        "habitat": "Desert",
+        "kingdom": "mammal",
+        "description": "Slithery Snake",
+        "imageName": "Red_Kangaroo"
+    },
+    {
+        "species": "Ostrich",
+        "habitat": "Desert",
+        "kingdom": "bird",
+        "description": "Slithery Snake",
+        "imageName": "Ostrich"
+    },
+    {
+        "species": "Gila Monster",
+        "habitat": "Desert",
+        "kingdom": "reptile",
+        "description": "Slithery Snake",
+        "imageName": "Gila_Monster"
+    },
+    {
+        "species": "Bald Eagle",
+        "habitat": "Forest",
+        "kingdom": "bird",
+        "description": "'merica",
+        "imageName": "Bald_Eagle"
+    },
+    {
+        "species": "Coyote",
+        "habitat": "Forest",
+        "kingdom": "mammal",
+        "description": "'merica",
+        "imageName": "Coyote"
+    },
+    {
+        "species": "Macaw",
+        "habitat": "Forest",
+        "kingdom": "bird",
+        "description": "'merica",
+        "imageName": "Macaw"
+    },
+    {
+        "species": "Crocodile",
+        "habitat": "Forest",
+        "kingdom": "reptile",
+        "description": "'merica",
+        "imageName": "Crocodile"
+    },
+    {
+        "species": "Siberian Tiger",
+        "habitat": "Forest",
+        "kingdom": "mammal",
+        "description": "'merica",
+        "imageName": "Siberian_Tiger"
+    },
+    {
+        "species": "Deer",
+        "habitat": "Forest",
+        "kingdom": "mammal",
+        "description": "'merica",
+        "imageName": "Deer"
+    },
+    {
+        "species": "Frog",
+        "habitat": "Forest",
+        "kingdom": "amphibian",
+        "description": "'merica",
+        "imageName": "Frog"
+    },
+    {
+        "species": "Wild Boar",
+        "habitat": "Forest",
+        "kingdom": "mammal",
+        "description": "'merica",
+        "imageName": "Wild_Boar"
+    },
+    {
+        "species": "Gopher Tortoise",
+        "habitat": "Forest",
+        "kingdom": "reptile",
+        "description": "'merica",
+        "imageName": "Gopher_Tortoise"
+    },
+    {
+        "species": "Grizzly Bear",
+        "habitat": "Forest",
+        "kingdom": "mammal",
+        "description": "'merica",
+        "imageName": "Grizzly_Bear"
+    },
+    {
+        "species": "Whale Shark",
+        "habitat": "Ocean",
+        "kingdom": "fish",
+        "description": "Largest living fish in the ocean",
+        "imageName": "Whale_Shark"
+    },
+    {
+        "species": "Walrus",
+        "habitat": "Ocean",
+        "kingdom": "mammal",
+        "description": "Largest living fish in the ocean",
+        "imageName": "Walrus"
+    },
+    {
+        "species": "Bottlenose Dolpin",
+        "habitat": "Ocean",
+        "kingdom": "mammal",
+        "description": "Largest living fish in the ocean",
+        "imageName": "Bottlenose_Dolphin"
+    },
+    {
+        "species": "Green Moray Eel",
+        "habitat": "Ocean",
+        "kingdom": "fish",
+        "description": "Largest living fish in the ocean",
+        "imageName": "Green_Moray_Eel"
+    },
+    {
+        "species": "Grey Seal",
+        "habitat": "Ocean",
+        "kingdom": "mammal",
+        "description": "Largest living fish in the ocean",
+        "imageName": "Grey_Seal"
+    },
+    {
+        "species": "Sea Star",
+        "habitat": "Ocean",
+        "kingdom": "invertebrates",
+        "description": "Largest living fish in the ocean",
+        "imageName": "Sea_Star"
+    },
+    {
+        "species": "King Penguin",
+        "habitat": "Ocean",
+        "kingdom": "bird",
+        "description": "Largest living fish in the ocean",
+        "imageName": "King_Penguin"
+    },
+    {
+        "species": "Lion Fish",
+        "habitat": "Ocean",
+        "kingdom": "fish",
+        "description": "Largest living fish in the ocean",
+        "imageName": "Lion_Fish"
+    },
+    {
+        "species": "Sea Otter",
+        "habitat": "Ocean",
+        "kingdom": "mammal",
+        "description": "Largest living fish in the ocean",
+        "imageName": "Sea_Otter"
+    },
+    {
+        "species": "Stingray",
+        "habitat": "Ocean",
+        "kingdom": "fish",
+        "description": "Largest living fish in the ocean",
+        "imageName": "Stingray"
+    }
+]
