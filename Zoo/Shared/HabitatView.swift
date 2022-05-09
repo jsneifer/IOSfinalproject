@@ -6,7 +6,9 @@
 //
 import SwiftUI
 
+
 struct HabitatView: View {
+    
     
     @State private var animalStore : AnimalStore = AnimalStore(animals: AnimalData)
     
@@ -18,28 +20,60 @@ struct HabitatView: View {
                 RainforestPage(animalStore: $animalStore)
             }.tabItem {
                 Image(systemName: "leaf.circle.fill")
+                Text("Rainforest")
             }.tag(1)
+            
             VStack{
                 DesertPage(animalStore: $animalStore)
             }.tabItem {
                 Image(systemName: "flame.circle.fill")
+                Text("Desert")
+
             }.tag(2)
+            
             VStack{
                 OceanPage(animalStore: $animalStore)
             }.tabItem {
                 Image(systemName: "drop.circle.fill")
+                Text("Ocean")
+
             }.tag(3)
+            
             VStack{
                 ForestPage(animalStore: $animalStore)
             }.tabItem {
                 Image(systemName: "pawprint.circle.fill")
+                Text("Forest")
+
             }.tag(4)
         }
+        .accentColor(colorToShow(selection: selection))
         .navigationTitle("Habitats")
         .navigationBarTitleDisplayMode(.inline)
     }
+    
+    
 }
 
+func colorToShow(selection: Int) -> Color {
+    let darkGreen = Color(red: 0.09, green: 0.49, blue: 0.20, opacity: 1.00)
+
+    var colorToShow: Color {
+        switch selection {
+            case 1:
+            return .green.opacity(0.7)
+            case 2:
+            return .brown.opacity(0.7)
+            case 3:
+                return .blue.opacity(0.7)
+            case 4:
+            return darkGreen.opacity(0.7)
+            default:
+                return .clear
+        }
+    }
+    return colorToShow
+}
 
 struct RainforestPage: View {
     
@@ -49,17 +83,23 @@ struct RainforestPage: View {
     
     var body: some View {
         
-        Text("Rainforest")
-            .font(.largeTitle)
-            .padding()
-        
+        VStack {
+            Text("Rainforest")
+                .font(.largeTitle)
+                .fontWeight(.light)
+
+            
             List {
                 ForEach (animalStore.animals, id: \.self) { animal in
                     if(animal.habitat == "Rainforest") {
-                        ListCell(animal: animal)
+                        ListCell(animal: animal).foregroundColor(.green)
                     }
                 }
             }
+        }
+        .background(.green.opacity(0.5))
+        
+            
     }
 }
 
@@ -71,18 +111,21 @@ struct DesertPage: View {
     
     var body: some View {
         
-        Text("Desert")
-            .font(.largeTitle)
-            .padding()
-        
+        VStack {
+            Text("Desert")
+                .font(.largeTitle)
+                .fontWeight(.light)
+
+            
             List {
                 ForEach (animalStore.animals, id: \.self) { animal in
                     if(animal.habitat == "Desert") {
-                        ListCell(animal: animal)
+                        ListCell(animal: animal).foregroundColor(.brown)
                     }
                 }
             }
-        
+        }
+        .background(.brown.opacity(0.7))
     }
 }
 
@@ -94,39 +137,51 @@ struct OceanPage: View {
     
     var body: some View {
         
-        Text("Ocean")
-            .font(.largeTitle)
-            .padding()
-        
+        VStack {
+            Text("Ocean")
+                .font(.largeTitle)
+                .fontWeight(.light)
+
+            
             List {
                 ForEach (animalStore.animals, id: \.self) { animal in
                     if(animal.habitat == "Ocean") {
-                        ListCell(animal: animal)
+                        ListCell(animal: animal).foregroundColor(.blue)
                     }
                 }
             }
         }
+        .background(.blue.opacity(0.7))
+    }
 }
 
 struct ForestPage: View {
-    
+    let darkGreen = Color(red: 0.09, green: 0.49, blue: 0.20, opacity: 1.00)
     @Binding var animalStore: AnimalStore
     
     @State var forestAnimal: [Animal] = []
     
     var body: some View {
         
-        Text("Forest")
-            .font(.largeTitle)
-            .padding()
-        
+        VStack {
+            Text("Forest")
+                .font(.largeTitle)
+                .fontWeight(.light)
+
             List {
                 ForEach (animalStore.animals, id: \.self) { animal in
                     if(animal.habitat == "Forest") {
-                        ListCell(animal: animal)
+                        ListCell(animal: animal).foregroundColor(darkGreen)
                     }
-                }            }
+                }
+                    
+            }
         }
+        .background(darkGreen.opacity(0.7))
+
+        
+            
+    }
 }
 
 struct ListCell: View {
@@ -134,7 +189,7 @@ struct ListCell: View {
     var body: some View {
         NavigationLink(destination: AnimalDetail(selectedAnimal: animal)) {
             Text(animal.species)
-                .font(.title2)
+                .font(.title3)
                 .fontWeight(.semibold)
                 .padding()
         }

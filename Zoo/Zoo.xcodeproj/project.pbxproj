@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F80FD832828A4C3002D01A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F80FD822828A4C3002D01A5 /* Assets.xcassets */; };
 		CFD1681028287677002401F6 /* ZooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1680028287675002401F6 /* ZooApp.swift */; };
 		CFD1681128287677002401F6 /* ZooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1680028287675002401F6 /* ZooApp.swift */; };
 		CFD1681F282876E5002401F6 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1681E282876E5002401F6 /* Animal.swift */; };
@@ -17,10 +18,10 @@
 		CFD1683E2828770F002401F6 /* AnimalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1682B2828770E002401F6 /* AnimalDetail.swift */; };
 		CFD1683F2828770F002401F6 /* AnimalData.json in Resources */ = {isa = PBXBuildFile; fileRef = CFD1682C2828770E002401F6 /* AnimalData.json */; };
 		CFD168432828773B002401F6 /* AnimalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD168422828773B002401F6 /* AnimalStore.swift */; };
-		CFD1684728288684002401F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD1684628288684002401F6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F80FD822828A4C3002D01A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../ZooGuide/Shared/Assets.xcassets; sourceTree = "<group>"; };
 		CFD1680028287675002401F6 /* ZooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooApp.swift; sourceTree = "<group>"; };
 		CFD1680728287677002401F6 /* Zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD1680D28287677002401F6 /* Zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,7 +34,6 @@
 		CFD1682B2828770E002401F6 /* AnimalDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalDetail.swift; sourceTree = "<group>"; };
 		CFD1682C2828770E002401F6 /* AnimalData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimalData.json; sourceTree = "<group>"; };
 		CFD168422828773B002401F6 /* AnimalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalStore.swift; sourceTree = "<group>"; };
-		CFD1684628288684002401F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/iOSfinalproject-main-2/ZooGuide/Shared/Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,7 @@
 		CFD167FF28287675002401F6 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3F80FD822828A4C3002D01A5 /* Assets.xcassets */,
 				CFD1681E282876E5002401F6 /* Animal.swift */,
 				CFD1682B2828770E002401F6 /* AnimalDetail.swift */,
 				CFD168422828773B002401F6 /* AnimalStore.swift */,
@@ -75,7 +76,6 @@
 				CFD168252828770E002401F6 /* MapView.swift */,
 				CFD168242828770E002401F6 /* AnimalData.swift */,
 				CFD1680028287675002401F6 /* ZooApp.swift */,
-				CFD1684628288684002401F6 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFD1684728288684002401F6 /* Assets.xcassets in Resources */,
+				3F80FD832828A4C3002D01A5 /* Assets.xcassets in Resources */,
 				CFD1683F2828770F002401F6 /* AnimalData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
