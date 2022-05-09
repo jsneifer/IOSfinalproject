@@ -48,13 +48,23 @@ struct HabitatView: View {
             }.tag(4)
         }
         .accentColor(colorToShow(selection: selection))
-        .navigationTitle("Habitats")
+        .navigationTitle("")
+        .navigationBarHidden(true)
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            // correct the transparency bug for Tab bars
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithOpaqueBackground()
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        } // source: https://www.hackingwithswift.com/forums/ios/tab-bar-transparent/10549
+        // source above was used to fix issue of tab bar becoming transparent on navigation scene change
     }
     
     
 }
 
+
+// changes the color of the tab icons depending on selection
 func colorToShow(selection: Int) -> Color {
     let darkGreen = Color(red: 0.09, green: 0.49, blue: 0.20, opacity: 1.00)
 
@@ -96,6 +106,7 @@ struct RainforestPage: View {
                     }
                 }
             }
+
         }
         .background(.green.opacity(0.5))
         
