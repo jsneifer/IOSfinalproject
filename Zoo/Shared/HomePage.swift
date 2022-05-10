@@ -40,7 +40,7 @@ struct HomePage: View {
                     }
                     .background(RoundedRectangle(cornerRadius: CGFloat(10)).foregroundColor(.green).opacity(0.5).frame(width: 165, height: 50, alignment: .center))
                     
-                    NavigationLink(destination: HabitatView()) {
+                    NavigationLink(destination: MapView()) {
                         HStack {
                             Text("Map")
                                 .font(.title)

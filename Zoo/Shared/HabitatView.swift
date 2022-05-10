@@ -49,7 +49,6 @@ struct HabitatView: View {
         }
         .accentColor(colorToShow(selection: selection))
         .navigationTitle("")
-        .navigationBarHidden(true)
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             // correct the transparency bug for Tab bars
