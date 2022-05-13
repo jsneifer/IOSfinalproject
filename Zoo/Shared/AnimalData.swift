@@ -11,6 +11,9 @@ import SwiftUI
 
 var AnimalData: [Animal] = loadJson("AnimalData.json")
 
+/*
+ The function loadJson essentially loads the json file AnimalData and if there are any complications, then a fatal error is executed that either displays that the file could not be led or it couldn't be parsed.
+ */
 func loadJson<T: Decodable>(_ filename: String) -> T {
     let data: Data
     

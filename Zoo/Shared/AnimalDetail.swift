@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
-
+/*
+ The structure Animal Detail is essentially responsible for what you see when you click on one of the animals in any of the four habitats. It's designed so that when you click on an animal, you will see an image of the animal, what habitat it resides in, the type of animal, and a description about the animal.
+ */
 struct AnimalDetail: View {
     
     let selectedAnimal: Animal

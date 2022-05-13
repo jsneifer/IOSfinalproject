@@ -6,6 +6,9 @@
 //
 import SwiftUI
 
+/*
+ The structure MapView essentially implements a button on the home page that displays "Map" and when you click on the button, it will take you to a new tab. This new tab will display a full map of the zoo.
+ */
 struct MapView: View {
     
     @State private var magnification: CGFloat = 1.0

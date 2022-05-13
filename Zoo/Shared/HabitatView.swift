@@ -6,7 +6,9 @@
 //
 import SwiftUI
 
-
+/*
+ The structure HabitatView allows for the user to select between any of the four habitats that contains animals in the zoo. It is implemented so that each button to change between habitats is filled in with an image that represents that enviornment. For the ocean there is a water drop, rainforest there is leaf, desert there is a flame, and forest there is a pawprint.
+ */
 struct HabitatView: View {
     
     
@@ -84,6 +86,9 @@ func colorToShow(selection: Int) -> Color {
     return colorToShow
 }
 
+/*
+ The structure RainforestPage is meant to design the rainforest tab and what user sees on the tab. It also inherits from the AnimalData.json file and which ever animals have a habitat under Rainforest will be added to the list of animals in the Rainforest tab.
+ */
 struct RainforestPage: View {
     
     @Binding var animalStore: AnimalStore
@@ -113,6 +118,9 @@ struct RainforestPage: View {
     }
 }
 
+/*
+ The structure DesertPage is meant to design the rainforest tab and what user sees on the tab. It also inherits from the AnimalData.json file and which ever animals have a habitat under Desert will be added to the list of animals in the Desert tab.
+ */
 struct DesertPage: View {
     
     @Binding var animalStore: AnimalStore
@@ -139,6 +147,9 @@ struct DesertPage: View {
     }
 }
 
+/*
+ The structure OceanPage is meant to design the rainforest tab and what user sees on the tab. It also inherits from the AnimalData.json file and which ever animals have a habitat under Ocean will be added to the list of animals in the Ocean tab.
+ */
 struct OceanPage: View {
     
     @Binding var animalStore: AnimalStore
@@ -165,6 +176,9 @@ struct OceanPage: View {
     }
 }
 
+/*
+ The structure ForestPage is meant to design the rainforest tab and what user sees on the tab. It also inherits from the AnimalData.json file and which ever animals have a habitat under Forest will be added to the list of animals in the Forest tab.
+ */
 struct ForestPage: View {
     let darkGreen = Color(red: 0.09, green: 0.49, blue: 0.20, opacity: 1.00)
     @Binding var animalStore: AnimalStore
@@ -194,6 +208,9 @@ struct ForestPage: View {
     }
 }
 
+/*
+ The structure ListCell essentially lists the name of the animal under the details of that specific animal. An example of this would be when you click on the animal Jaguar, inside that tab under animal details, it will also display Jaguar.
+ */
 struct ListCell: View {
     var animal: Animal
     var body: some View {
