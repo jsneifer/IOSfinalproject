@@ -16,7 +16,7 @@ struct Animal : Codable, Hashable {
     var habitat: String
     
     var kingdom: String
-    
+    //below by Anthony
     var description: String
     
     var imageName: String

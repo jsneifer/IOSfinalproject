@@ -10,7 +10,7 @@ struct HomePage: View {
     var body: some View {
         NavigationView {
             
-            
+            // below by pablo
             VStack(){
                 
                 Spacer()
@@ -19,7 +19,6 @@ struct HomePage: View {
                     .font(.largeTitle)
                     .padding(.bottom, 30)
 //                    .padding(.top, 100)
-                
                 
                 
                 VStack(spacing: 35) {

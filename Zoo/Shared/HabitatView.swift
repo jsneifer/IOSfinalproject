@@ -60,11 +60,12 @@ struct HabitatView: View {
         } // source: https://www.hackingwithswift.com/forums/ios/tab-bar-transparent/10549
         // source above was used to fix issue of tab bar becoming transparent on navigation scene change
     }
-    
+    // done by pablo
     
 }
 
 
+// done by pablo
 // changes the color of the tab icons depending on selection
 func colorToShow(selection: Int) -> Color {
     let darkGreen = Color(red: 0.09, green: 0.49, blue: 0.20, opacity: 1.00)
@@ -113,7 +114,7 @@ struct RainforestPage: View {
 
         }
         .background(.green.opacity(0.5))
-        
+        // UI by pablo and color logic
             
     }
 }
@@ -143,7 +144,8 @@ struct DesertPage: View {
                 }
             }
         }
-        .background(.brown.opacity(0.7))
+        .background(.brown.opacity(0.7))         // UI by pablo and color logic
+
     }
 }
 
@@ -173,6 +175,8 @@ struct OceanPage: View {
             }
         }
         .background(.blue.opacity(0.7))
+        // UI by pablo and color logic
+
     }
 }
 
@@ -202,6 +206,7 @@ struct ForestPage: View {
             }
         }
         .background(darkGreen.opacity(0.7))
+        // UI by pablo and color logic
 
         
             
