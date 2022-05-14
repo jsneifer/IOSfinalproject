@@ -32,3 +32,7 @@
 * Joseph: Implemented functionality of the app, including HomePage, HabitatView, MapView. Also implemented app navigation and tabs.
 * Anthony: Implemented the information and some of the design, mainly adding the animals and each of the animal's information as well as their images.
 * Pablo: Worked on home page and habitat view. Implemented different styles for each habitat that change based on tabbar selection and match biome. Also implemented design and navigation for homepage to map and habitats. Worked on design throughout app too.
+
+## Project Instructions
+
+* To get the animal images to appear download the zip file, extract, and place all the animal images inside the assests folder of the XCode project.
