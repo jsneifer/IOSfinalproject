@@ -35,4 +35,5 @@
 
 ## Project Instructions
 
-* To get the animal images to appear download the zip file, extract, and place all the animal images inside the assests folder of the XCode project.
+* To get the animal images and map to appear download the zip file, extract, and place all the images inside the assets folder of the XCode project.
+* - GitHub was not allowing us to upload images and place them in the assets folder automatically.
