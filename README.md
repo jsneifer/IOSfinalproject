@@ -34,6 +34,18 @@
 * Pablo: Worked on home page and habitat view. Implemented different styles for each habitat that change based on tabbar selection and match biome. Also implemented design and navigation for homepage to map and habitats. Worked on design throughout app too.
 
 ## Project Instructions
+* Download project as zip (or command line via git clone).
+* open project in Xcode, you will see that assets is highlighted red.
+* Go to the shared folder in your finder (under the same directory as the xcode project)
+* Go to assets
+* Open the zipped file, it will give you a folder of images
+* Select all of those images and paste them at the top level of the assets folder 
+* Delete the zipped file and the image folder, leaving you only with the images and what was originally there (ie json) in the parent level of the assets folder
+* Now drag the assets folder into xcode
+* Delete the previous assets folder that was in xcode
+* IF your new assets folder on xcode is empty, just select all from the same folder in your finder and drag onto the assets folder on xcode
+* Now you should see that assets folder on xcode has all the images and etc
+* Run your project.
 
-* To get the animal images and map to appear download the zip file, extract, and place all the images inside the assets folder of the XCode project.
+
 - GitHub was not allowing us to upload images and place them in the assets folder automatically.
